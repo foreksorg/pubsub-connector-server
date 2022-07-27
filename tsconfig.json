@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "target": "ESNext",
+    "module": "CommonJS",
+    "strict": true,
+    "noImplicitAny": false,
+    "allowSyntheticDefaultImports": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "esModuleInterop": false,
+    "sourceMap": false,
+    "noEmitOnError": true,
+    "noEmit": true,
+    "declaration": true,
+    "moduleResolution": "node",
+    "types": ["node", "jest"]
+  },
+  "include": ["./src/**/*.ts"],
+  "exclude": ["node_modules", "test"]
+}

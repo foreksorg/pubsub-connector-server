@@ -40,7 +40,8 @@ var PubsubConnector = (function () {
         }
         return new Promise(function (resolve, reject) {
             try {
-                var server = new ws_1.default(_this.options.url);
+                var WebSocket_1 = require("ws");
+                var server = new WebSocket_1(_this.options.url);
                 _self.socket = server;
             }
             catch (ex) {

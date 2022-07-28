@@ -65,6 +65,7 @@ export default class PubsubConnector implements IPubsubConnector {
 
     return new Promise((resolve, reject) => {
       try {
+        const WebSocket = require("ws");
         const server = new WebSocket(this.options.url);
         _self.socket = server;
       } catch (ex) {
